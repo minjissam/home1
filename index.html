@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"> 
+  <title>홈페이지 프로젝트</title>
+  <style type="text/css">
+  input[type=text]{background:yellow;}
+  input[value]{background:yellowgreen;}
+  input[value$="송"]{color:red;}
+  [class~=red]{color:magenta;}
+  [class~=italic]{font-style:italic;}
+ [class|="aaa"]{border:1px dashed blue;}
+  </style>
+  <link rel="stylesheet" href="/css/st.css">
+ </head>
+
+ <body> 
+<p class="aaa-1">같은 것으로 인식</p>
+<p class="aaa-2">같은 것으로 인식</p>
+<p class="aaa-3">같은 것으로 인식</p>
+<p>
+* GET : http://localhost:포트번호/폴더이름/파일이름?search=값&password=값'형태로 URL이 변경된다. get은 이렇게 주소에 데이타를 입력해서 보내는 방식
+	          주소에 데이타를 입력하므로 크기가 한정되어 있다.
+	<form method="get">   
+		<input type="text" name="search" /> 
+		<input type="password" name="password" />
+		<input type="submit" value="submit" />
+	</form>
+ </p>
+ <p>
+* POST : 비밀스럽게 전달하는 방식. 데이타 용량에 제한이 없다.
+	<form method="post">
+		<input type="text" name="search" />
+		<input type="password" name="password" />
+		<input type="submit" value="submit" />
+	</form>
+ </p>
+ <p>
+	<table border=0 cellspacing=1 bgcolor=blue cellpadding=5>
+		<tr height=30 bgcolor=lightblue>
+			<th colspan=2>index태그 type속성값</th>
+		</tr>
+		<tr bgcolor=white>
+			<td width=100>
+				button<br />
+				checkbox<br />
+				file<br />
+				hidden<br />
+				image<br />
+				password<br />
+				radio<br />
+				reset<br />
+				submit<br />
+				text
+			</td>
+			<td>
+				버튼 생성<br />
+				체크박스 생성<br />
+				파일 입력 양식 생성<br />
+				보이지 않음<br />
+				이미지 형태를 생성<br />
+				비밀번호 입력양식을 생성 <br />
+				라디오 버튼을 생성<br />
+				초기화 버튼을 생성<br />
+				제출 버튼 생성<br />
+				글자 입력 양식 생성<br />
+			</td>
+		</tr>
+	</table>
+	<br />
+	<table border=0 cellspacing=1 bgcolor=blue cellpadding=5>
+		<tr height=30 bgcolor=lightblue>
+			<th colspan=2 class="red italic">html5에 추가된 index태그 type속성값</th>
+		</tr>
+		<tr bgcolor=white>
+			<td width=120>
+				color<br />
+				date<br />
+				datetime<br />
+				datetime-local<br />
+				ematil<br />
+				month<br />
+				number<br />
+				range<br />
+				search<br />
+				tel<br />
+				time<br />
+				url<br />
+				week<br />
+			</td>
+			<td>
+				색상 선택 양식을 생성<br />
+				일 선택 양식을 생성<br />
+				날짜 선택 양식을 생성<br />
+				지역 날짜 선택 양식을 생성<br />
+				이메일 입력 양식을 생성<br />
+				월 선택 양식을 생성<br />
+				숫자 생성 양식을 생성<br />
+				범위 선택 양식을 생성<br />
+				검색어 입력 양식을 생성<br />
+				전화 번호 입력 양식을 생성<br />
+				시간 선택 양식을 생성<br />
+				URL 주소 입력 양식을 생성<br />
+				주 선택 양식을 생성
+			</td>
+		</tr>
+	</table>
+	<hr />
+
+
+		<textarea rows=5 cols=10>text area
+text area
+		</textarea>
+
+
+<br /><br /><br /><br /><br />
+<form> 
+   <input type="text" name="name" /><br /> 
+   <input type="password" name="password" /><br /> 
+   <input type="file" name="file" /><br />
+   <input type="submit" value="전송"/> 
+</form>
+<br /><br /><br /><br />
+<form>
+   <select>
+      <option>김밥</option>
+      <option>라면</option>
+      <option>떡볶이</option>
+      <option>순대</option>
+   </select>
+</form>
+<br /><br /><br /><br /><br />
+<form>
+   <select multiple="multiple">
+      <option>김밥</option>
+      <option>라면</option>
+      <option>떡볶이</option>
+      <option>순대</option>
+   </select>
+</form>
+<br /><br /><br /><br /><br />
+<form>
+   <select> 
+      <optgroup label=html5>
+         <option>Multimedia Tag</option>
+         <option>Connectivity</option>
+         <option>Device Access</option>
+      </optgroup>
+      <optgroup label=css3>
+         <option>Animation</option>
+         <option>3D Transform</option>
+      </optgroup>
+   </select>
+</form>
+<br /><br /><br /><br /><br />
+
+<form>
+   <fieldset>
+      <legend>입력양식</legend>
+      <table>
+         <tr>
+            <td><lable for="name">이름</lable></td>
+            <td><input id="name" type="text" /></td>
+         </tr>
+         <tr>
+            <td><lable for="mail">이메일</lable></td>
+            <td><input id="mail" type="email" /></td>
+         </tr>
+      </table>
+      <input type="submit" />
+   </fieldset>
+</form>
+
+
+ </body>
+</html>
